@@ -24,7 +24,7 @@ setup(name='hoka.adapter.auth',
       url='http://eggserver.tcis.de/hoka.adapter.auth',
       license='GPL version 2',
       packages=find_packages(),
-      namespace_packages=['hoka'],
+      namespace_packages=['hoka','hoka.adapter'],
       include_package_data=True,
       install_requires=[
         'setuptools',
@@ -41,6 +41,6 @@ setup(name='hoka.adapter.auth',
       zip_safe=False,
       entry_points='''
 [z3c.autoinclude.plugin]
-target = Zope2
+target = zope
 ''',
 )
